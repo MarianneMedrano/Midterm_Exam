@@ -1,0 +1,565 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.container {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/* BACKGROUND VIDEO */
+.videobg {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .videobg {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .videobg {
+        width: auto;
+        height: 100%;
+
+    }
+}
+
+/* END OF BACKGROUND VIDEO */
+/* Class top */
+.top {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: right;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 25px;
+
+}
+
+ul li a {
+    margin-right: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.5s ease;
+
+}
+
+ul:hover li a {
+    color: #0ef;
+}
+
+ul:hover li a:not(:hover) {
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+/* End of class Top */
+/* CLASS "name" */
+.name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    z-index: 1;
+    top: 15px;
+    font-size: 20px;
+    left: 50px;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px aquamarine;
+
+}
+
+.name h1 span {
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+}
+
+/* END OF CLASS "name"  */
+/* CLASS "travel" */
+.Us {
+    border: #0ef 2px solid;
+    width: fit-content;
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+    font-size: 100px;
+    padding: 5px 10px 5px 10px;
+    margin: auto;
+    position: relative;
+    top: 250px;
+}
+
+.Surf {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 30px;
+    margin: auto;
+    position: relative;
+    top: 270px;
+    width: fit-content
+}
+
+/* END OF CLASS "travel" */
+
+/* destinations.html */
+.recommended {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 0 0 10px #0ef;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+}
+
+/* CLASS "destination" */
+.card {
+    width: 320px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(5, 129, 138);
+    box-shadow: 0 0 20px #0ef;
+    position: relative;
+    left: 100px;
+
+}
+
+.cardimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cardbody {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    flex-direction: column;
+    text-align: justify;
+    transition: 1.5s;
+}
+
+.card:hover .cardbody {
+    right: 0;
+}
+
+.cardtitle {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+    margin: auto;
+    margin-top: 10px;
+    color: #0ef;
+    text-shadow: 0 0 10px black;
+}
+
+.cardinfo {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 70px 0;
+    font-weight: 400;
+    text-indent: 30px;
+    position: absolute;
+}
+
+.cardbtn {
+    color: #0ef;
+    background: black;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    left: 70px;
+    bottom: 10px;
+}
+
+.btn {
+    color: #0ef;
+    background: black;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    top: 900px;
+    left: 1050px;
+    box-shadow: 0 0 10px #0ef;
+}
+
+.boracay {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+.bohol {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+.cebu {
+    position: absolute;
+    top: 100px;
+    left: 760px;
+}
+
+.ilocos {
+    position: absolute;
+    top: 490px;
+    left: 40px;
+}
+
+.palawan {
+    position: absolute;
+    top: 490px;
+    left: 400px;
+}
+
+.batanes {
+    position: absolute;
+    top: 490px;
+    left: 760px;
+}
+
+/* END OF CLASS "destination" */
+/* end of destinations.html */
+
+/* about.html */
+.title {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #222;
+    text-shadow: 0 0 10px #0ef;
+    letter-spacing: 1.5px;
+    top: 80px;
+
+}
+
+.title h1::after {
+    content: '';
+    height: 6px;
+    width: 200px;
+    background-color: #222;
+    border-radius: 6px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 10px auto;
+    top: 70px;
+    left: 65px;
+
+}
+
+.content .article {
+    box-shadow: 0px 0px 6px 0px #00c8ff;
+    background-color: #eee;
+    padding: 25px 25px;
+}
+
+.content .article h2 {
+    color: black;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 0 0 10px #0ef;
+}
+
+.content .article p {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222;
+    text-align: justify;
+    text-indent: 30px;
+
+}
+
+.about-img {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    height: 350px;
+    left: 600px;
+    box-shadow: 0px 0px 10px 0px #00c8ff;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.column {
+    width: 100%;
+
+}
+
+.about-btn {
+    color: #0ef;
+    background: black;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 10px #0ef;
+    top:110px;
+    left:600px;
+}
+
+/* end of about.html */
+/* team.html */
+.ourteam {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.row h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 0 10px #0ef;
+}
+
+.row h1::after {
+    content: '';
+    height: 6px;
+    width: 200px;
+    background-color: #222;
+    border-radius: 6px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.team {
+    box-shadow: 0 0 10px #00c8ff;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+    position: relative;
+    left: 210px;
+}
+
+.team .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: rgb(5, 150, 160);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.team img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team h3 {
+    font-weight: 500;
+}
+
+.team p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+}
+
+.team:hover {
+    background: linear-gradient(#0ef, #00c8ff);
+    color: black;
+}
+
+.team:hover .img-container {
+    transform: scale(1.15);
+}
+
+/* end of team.html */
+
+/* media query on div container */
+
+@media only screen and (max-width: 1200px) {
+    .Us {
+        font-size: 70px;
+        margin: auto;
+    }
+
+    .Surf {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 70%;
+    }
+
+    ul li a {
+        margin-right: 60px;
+        font-size: 60%;
+    }
+
+    .card {
+        width: 270px;
+        height: 300px;
+    }
+/* 
+    .recommended {
+        top: 7%;
+    }
+
+
+    .boracay {
+        top: 15%;
+        left: 0%;
+    }
+
+    .bohol {
+        top: 15%;
+        left: 40%;
+    }
+
+    .cebu {
+        top: 50%;
+        left: 0%
+    }
+
+    .ilocos {
+        top: 50%;
+        left: 40%;
+    }
+
+    .palawan {
+        top: 85%;
+        left: 0%
+    }
+
+    .batanes {
+        top: 85%;
+        left: 40%;
+    } */
+}
+
+/* end of media query on div container */
+/* team.html media query */
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+
+    .team {
+        padding: 5em 1em;
+    }
+
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}
+
+/* end of team.html media query */
